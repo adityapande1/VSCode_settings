@@ -1,0 +1,151 @@
+{
+    /**
+     * Appearance
+     **/
+    "workbench.colorTheme": "Catppuccin Macchiato", // Set VSCode theme
+    "workbench.iconTheme": "material-icon-theme", // Set icon theme
+    // "material-icon-theme.saturation": 1, // Desaturate file icons
+    "material-icon-theme.files.color": "#42a5f5", // Hide activity bar
+    "workbench.statusBar.visible": false, // Hide status bar
+    "workbench.sideBar.location": "left", // Sidebar on left
+    "workbench.tree.enableStickyScroll": false, // Disable sticky scroll in explorer
+    "window.nativeFullScreen": true, // Use native fullscreen mode
+    "window.newWindowDimensions": "inherit", // Open new windows with same dimensions
+    "workbench.startupEditor": "none", // Disable welcome/startup editor
+    "workbench.tips.enabled": false, // Hide editor tabs
+    "workbench.editor.enablePreview": false, // Disable preview mode for files
+    "workbench.editor.enablePreviewFromQuickOpen": false, // Disable quick open preview
+
+    /**
+     * Editor
+     **/
+    "editor.fontFamily": "Geist Mono, JetBrains Mono, Fira Code", // Editor font family
+    "editor.fontSize": 16, // Editor font size
+    "editor.fontWeight": "450", // Editor font weight
+    "editor.lineHeight": 28, // Editor line height
+    "editor.wordWrap": "wordWrapColumn", // Enable word wrap
+    "editor.wordWrapColumn": 120, // Set column width for word wrap
+    "editor.quickSuggestions": {"strings": true}, // Suggest completions inside strings
+    "editor.detectIndentation": false, // Disable auto-detect indentation
+    "editor.copyWithSyntaxHighlighting": false, // Disable copying with syntax highlighting
+    "editor.emptySelectionClipboard": false, // Avoid copying empty selection
+    "editor.multiCursorModifier": "ctrlCmd", // Use Ctrl/Cmd for multiple cursors
+    "editor.snippetSuggestions": "top", // Show snippet suggestions on top
+    "editor.hover.enabled": true, // Enable hover tooltips
+    "editor.hover.delay": 500, // Hover delay in ms
+    "editor.matchBrackets": "never", // Disable inline color decorators
+    "editor.selectionHighlight": false, // Disable selection highlight
+    "editor.occurrencesHighlight": "off", // Disable occurrence highlighting
+    "editor.renderLineHighlight": "none", // Disable line highlight
+    "editor.renderControlCharacters": false, // Do not render control characters
+    "editor.hideCursorInOverviewRuler": true, // Hide cursor in overview ruler
+    "editor.gotoLocation.multipleReferences": "goto", // Directly go to reference
+    "editor.gotoLocation.multipleDefinitions": "goto", // Directly go to definition
+    "editor.gotoLocation.multipleDeclarations": "goto", // Directly go to declaration
+    "editor.gotoLocation.multipleImplementations": "goto", // Directly go to implementation
+    "editor.gotoLocation.multipleTypeDefinitions": "goto", // Directly go to type definition
+    "editor.linkedEditing": true, // Enable linked editing for HTML/JSX
+    "editor.formatOnSave": false, // Disable auto-format on save
+    "editor.wordSeparators": "`~!@#%^&*()=+[{]}\\|;:'\",.<>/?", // Customize word separators
+    "editor.inlineSuggest.suppressSuggestions": true, // Suppress inline suggestions
+    "editor.padding.top": 16, // Top padding in editor
+    "editor.cursorBlinking": "solid", // Cursor blinking style
+    "editor.stickyScroll.enabled": false, // Disable sticky scroll
+    "editor.minimap.enabled": false, // Disable minimap
+    "editor.minimap.maxColumn": 250, // Max column width for minimap
+    "editor.tokenColorCustomizations": { // Customize font style for tokens
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "keyword",
+                    "variable.language",
+                    "entity.other.attribute-name.html",
+                    "entity.other.attribute-name",
+                    "keyword.control",
+                    "storage.type",
+                    "comment",
+                    "comment.block",
+                    "comment.line"
+                ],
+                "settings": {"fontStyle": ""}
+            }
+        ]
+    },
+
+    /**
+     * Terminal
+     **/
+    "terminal.integrated.lineHeight": 1.25, // Terminal line height
+    "terminal.integrated.fontSize": 16, // Terminal font size
+    "terminal.integrated.fontFamily": "Geist Mono, JetBrains Mono, Fira Code", // Terminal font family
+    "terminal.integrated.cursorBlinking": true, // Enable blinking cursor in terminal
+    "terminal.integrated.cursorStyle": "line", // Terminal cursor style
+    "terminal.integrated.scrollback": 10000, // Terminal scrollback lines
+    "terminal.integrated.fontWeight": "450", // Terminal font weight
+
+
+    /**
+     * Files & Saving
+     **/
+    "files.insertFinalNewline": true, // Ensure final newline on save
+    "files.trimFinalNewlines": true, // Trim extra final newlines
+    "files.trimTrailingWhitespace": true, // Trim trailing whitespace
+    "files.autoSave": "afterDelay", // Auto-save after delay
+    "explorer.confirmDelete": false, // Disable delete confirmation
+    "explorer.sortOrder": "type", // Sort files by type
+    "workbench.tree.indent": 15, // Tree view indentation
+    "files.associations": { // File type associations
+        ".php_cs": "php",
+        ".php_cs.dist": "php"
+    },
+
+    /**
+     * Diff & Source Control
+     **/
+    "diffEditor.ignoreTrimWhitespace": false, // Consider whitespace in diffs
+    "diffEditor.renderSideBySide": false, // Show diff inline
+    "diffEditor.wordWrap": "on", // Enable word wrap in diff editor
+    "scm.diffDecorations": "none", // Disable SCM diff decorations
+    "git.decorations.enabled": false, // Disable Git decorations
+    "problems.decorations.enabled": false, // Disable problems decorations
+
+    /**
+     * Search
+     **/
+    "search.useIgnoreFiles": false, // Ignore .gitignore for search
+
+    /**
+     * JSON
+     **/
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features" // Use default JSON formatter
+    },
+
+    /**
+     * Snippets / Suggestions
+     **/
+    "editor.suggestFontSize": 16, // Suggestion font size
+    "editor.suggestLineHeight": 30, // Suggestion line height
+
+    /**
+     * Security / Workspace
+     **/
+    "security.workspace.trust.untrustedFiles": "open", // Automatically open untrusted files
+
+    /**
+     * Misc
+     **/
+    "notebook.output.wordWrap": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.mouseWheelZoom": true, // Enable word wrap in notebook outputs
+
+    "vscode_custom_css.imports": [
+        "file:///Users/pingpongpande/Projects/VSCode_settings/custom-vscode.css",
+        "file:///Users/pingpongpande/Projects/VSCode_settings/vscode-script.js"
+    ],
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden"
+
+
+}
