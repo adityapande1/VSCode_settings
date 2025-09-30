@@ -1,0 +1,251 @@
+/* =========================
+   CODE COMMENT STYLE
+   ========================= */
+.mtk3 {
+    font-family: 'Monaspace Radon', monospace !important; /* Sets font family for code comments */
+    font-style: italic !important; /* Makes code comments italic */
+    color: #979797 !important; /* Sets code comment color to light gray */
+}
+
+/* =========================
+   CODE CANVAS TOP SHADOW
+   ========================= */
+.monaco-editor .scroll-decoration {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .75) !important; /* Adds shadow above editor for depth */
+    top: -6px !important; /* Moves shadow slightly above editor */
+}
+
+/* =========================
+   MATCH TEXT HIGHLIGHT
+   ========================= */
+.currentFindMatchInline {
+    background: #000 !important; /* Highlights search matches with black background */
+}
+
+/* =========================
+   SIDEBAR STYLING
+   ========================= */
+.part.sidebar {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, .25); /* Adds shadow around sidebar for separation */
+}
+
+/* Sidebar top shadow */
+.monaco-scrollable-element>.shadow.top {
+    box-shadow: 0px 0px 10px rgba(0,0,0,.75) !important; /* Adds a subtle top shadow to sidebar scrollable area */
+    top: -3px !important; /* Moves the shadow slightly above the top */
+}
+
+/* Sidebar title container */
+.composite.title {
+    display: flex !important; /* Uses flexbox for layout */
+    flex-direction: row !important; /* Aligns children in a row */
+    align-items: center !important; /* Vertically centers title items */
+    justify-items: center !important; /* Centers title items horizontally */
+}
+.composite.title h2 {
+    font-weight: bold !important; /* Makes sidebar title bold */
+    font-size: 12px !important; /* Sets sidebar title font size */
+    text-transform: uppercase; /* Converts title text to uppercase */
+    color: #bc9abc !important; /* Sets title color to a soft purple */
+}
+
+/* =========================
+   FILE EXPLORER STYLING
+   ========================= */
+
+/* Selected file row styling */
+.monaco-list.list_id_1 .monaco-list-row.selected {
+    background-color: #4f5971 !important; /* Sets background color of selected file row */
+    opacity: 1 !important; /* Ensures selected row is fully visible */
+    border-top: 1px #727b90 solid; /* Adds top border to selected row */
+    border-bottom: 1px #727b90 solid; /* Adds bottom border to selected row */
+}
+
+/* Selected file label text */
+.monaco-list.list_id_1 .monaco-list-row.selected .label-name {
+    color: #fff !important; /* Changes selected file label text to white */
+    opacity: 1 !important; /* Ensures text is fully visible */
+}
+
+/* Explorer item font style */
+.monaco-tree .monaco-tree-row .label-name,
+.monaco-list .monaco-list-row
+.monaco-icon-label .label-name {
+    font-family: 'Geist Mono', monospace !important; /* Sets font for file/folder names */
+    font-size: 14px !important; /* Sets font size for names */
+    font-weight: 400 !important; /* Sets normal weight for names */
+    color: #FFF !important; /* Sets text color to white */
+}
+
+/* Edited file font style */
+.explorer-item-edited {
+  font-family: Geist Mono !important; /* Font for edited file labels */
+  font-size: 14px !important; /* Font size for edited files */
+}
+
+/* Hide file explorer action buttons */
+.monaco-workbench .part.sidebar .title-actions .actions-container {
+    display: none; /* Hides action buttons in file explorer title */
+}
+
+/* =========================
+   SCROLLBAR STYLING
+   ========================= */
+.slider {
+    position: absolute !important; /* Positions scrollbar absolutely */
+    right: 1px !important; /* Places scrollbar 1px from right edge */
+    width: 1px !important; /* Makes scrollbar thin */
+    background: #bc9abc !important; /* Sets scrollbar color */
+    left: auto !important; /* Ensures left does not override right */
+}
+
+/* =========================
+   TOOLTIP & HOVER STYLING
+   ========================= */
+.monaco-editor-hover,
+.monaco-hover {
+    box-shadow: 0px 8px 32px rgba(0,0,0,.45) !important; /* Adds shadow to hover tooltips */
+    background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important; /* Gradient background for hover */
+    backdrop-filter: blur(3px) !important; /* Adds blur behind hover box */
+    border-radius: 8px !important; /* Rounds tooltip corners */
+    border: none !important; /* Removes border */
+    outline: 0px !important; /* Removes outline */
+    padding-left: 8px !important; /* Adjusts left padding */
+    padding-right: 8px !important; /* Adjusts right padding */
+    padding-bottom: 8px !important; /* Adjusts bottom padding */
+    padding-top: 8px !important; /* Adjusts top padding */
+    font-family: 'Geist Mono' !important; /* Sets font for hover text */
+    min-width: 200px !important; /* Ensures minimum width */
+
+}
+
+/* Resizable hover boxes */
+.monaco-resizable-hover {
+    border: none !important; /* Removes border from resizable hover tooltips */
+}
+
+/* =========================
+   PROJECT TITLE BAR STYLING
+   ========================= */
+.monaco-workbench .part.titlebar>.titlebar-container>.titlebar-center>.window-title>.command-center .action-item.command-center-center {
+    border: none !important; /* Removes border around title */
+    background: transparent !important; /* Makes background transparent */
+}
+
+/* Project Title container */
+.titlebar-left {
+    justify-content: flex-end !important; /* Aligns items to the right */
+    flex-grow: 0 !important; /* Prevents container from growing */
+    width: 75px !important; /* Sets fixed width */
+}
+
+/* Hide right-side titlebar elements */
+.titlebar-right > * {
+    display: none !important; /* Hides all elements on the right */
+}
+
+/* Command Center width */
+.command-center-center {
+    width: auto !important; /* Adjusts command center width automatically */
+}
+
+/* =========================
+   SEARCH PANEL STYLING
+   ========================= */
+.search-label {
+    font-family: 'Geist Mono' !important; /* Font for search label */
+    font-size: 14px !important; /* Font size for search label */
+    color: #fff; /* Text color */
+    display: block; /* Ensures label is a block element */
+}
+
+.search-icon {
+    display: none !important; /* Hides search icon */
+}
+
+.codicon-search::before {
+    display: none !important; /* Hides search icon pseudo-element */
+}
+
+.codicon-arrow-right, .codicon-arrow-left {
+    display: none !important; /* Hides navigation arrows */
+}
+
+/* =========================
+   COMMAND PALETTE STYLING
+   ========================= */
+.quick-input-widget {
+    transform: translateY(-50%) !important; /* Centers vertically */
+    top: 50% !important; /* Places in middle of screen */
+    box-shadow: 0px 8px 32px rgba(0, 0, 0, .35) !important; /* Shadow for command palette */
+    padding: 10px 10px 18px 10px !important; /* Adds padding inside */
+    background-image: linear-gradient(#3c3c50 0%, #2a2b38 100%) !important; /* Gradient background */
+    backdrop-filter: blur(3px) !important; /* Adds blur behind palette */
+    border-radius: 20px !important; /* Rounded corners */
+}
+
+.quick-input-list, .quick-input-list .list_id_6 {
+    min-height: 400px !important; /* Ensures enough height for list items */
+}
+
+/* =========================
+   COMMAND PALETTE SELECTION POP-OUT
+   ========================= */
+/* =========================
+   COMMAND PALETTE SELECTION POP-OUT WITH ROUNDED BOTTOM AND CENTERED TEXT
+   ========================= */
+.quick-input-list .monaco-list-row.focused {
+    background-color: #4f5971 !important; /* Highlight background */
+    color: #fff !important; /* Text color */
+    border-top: 1px #727b90 solid; /* Optional top border */
+    border-bottom: 1px #727b90 solid; /* Optional bottom border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5) !important; /* Adds shadow for pop-out effect */
+    transform: scale(1.05); /* Slightly enlarges the selected row */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Smooth transition */
+    z-index: 10; /* Keep above other items */
+    border-radius: 6px 6px 6px 6px; /* Rounded bottom corners */
+    display: flex !important; /* Use flexbox */
+    align-items: center !important; /* Vertically center the text */
+    padding-left: 20px !important; /* Adds left padding */
+}
+
+
+
+/* Remove list background */
+.monaco-list-rows {
+    background: transparent !important; /* Makes list background transparent */
+}
+
+/* Command palette input styling */
+.quick-input-filter .monaco-inputbox {
+    border-radius: 12px !important; /* Rounded input box */
+    padding: 16px !important; /* Inner padding */
+    border: none !important; /* No border */
+    font-family: "Geist Mono" !important; /* Input font */
+    font-size: 16px !important; /* Input font size */
+    margin-bottom: 16px !important; /* Space below input */
+}
+
+/* Command palette backdrop */
+#command-blur {
+    position: absolute; /* Cover entire window */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: rgba(0, 0, 0, .15); /* Semi-transparent overlay */
+    top: 0; /* Top edge */
+    left: 0; /* Left edge */
+    backdrop-filter: blur(8px); /* Blurs background */
+}
+
+/* Inline actions after input */
+.quick-input-inline-action-bar .actions-container .action-item{
+	margin-bottom: 16px !important; /* Space between actions */
+}
+.quick-input-header{
+	align-items: center; /* Vertically centers header */
+}
+
+/* Placeholder text in command palette input */
+.monaco-inputbox input::placeholder {
+    color: rgba(255, 255, 255, .3) !important; /* Light semi-transparent placeholder */
+}
